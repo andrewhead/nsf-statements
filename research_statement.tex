@@ -1,6 +1,8 @@
 \documentclass[12pt]{memoir}
-\usepackage[backend=bibtex,style=numeric]{biblatex}
+\usepackage[backend=bibtex,style=ieee,doi=false,url=false,isbn=false]{biblatex}
 \usepackage[pdftex]{graphicx}
+\usepackage{enumitem}
+\usepackage{url}
 \usepackage{style}
 
 \addbibresource{references}
@@ -22,42 +24,42 @@ Brandt et al.\ associated several habits with opportunistic programming that are
 Those programming opportunistically likely to incorporate functionality by copying and pasting code, often from online sources~\cite{brandt_two_2009}.
 They are more likely to implement functionality from scratch for well-known libraries, instead of reusing existing systems and libraries~\cite{brandt_opportunistic_2008}.
 They also practice ``code satisficing'', implementing functionality in a sub-optimal way in order to maintain flow and move on to other functionality~\cite{brandt_opportunistic_2008}.
+
 While opportunistic programming is powerful in that it allows one to rapidly prototype and ideate and that it reduces the cycle time of editing and debugging code~\cite{brandt_opportunistic_2008}, this behavior discourages the formation of new mental models and an introduction to new tools that should be encouraged for both novice programmers and many end-user programmers.
+The author of this proposal observed much of what would be called ``opportunistic'' habits while instructing a user interface design course.
+After providing reference code to students for programming interfaces on Android phones and smartwatches, he helped students debug problems related to API reuse and the side effects of mixed code from multiple examples after hearing students self-report to having ``copied and pasted'' code from online tutorials and the slides he distributed.
+In light of a prevalence of the ease of opportunistic habits and programmers' ability to copy-and-paste code from an increasingly comprehensive body of crowd documentation online~\cite{parnin_crowd_2012}, I define the goals of my research:
 
-\if 0
-This involves the reuse of components found across the web into developing working code for their personally-determined purpose, in many cases ``hacking, mashing and gluing'' code from many different sources~\cite{hartmann_hacking_2008}.
-Programming enrollments have increased on college campuses, and online platforms have been developed to encourage programming learning outside of the campus, often free of tuition (e.g., Khan Academy).
-In addition, it has been shown that professionals such as designers may lack formal training in programming, but reuse code and examples that they find online in their work, perhaps even without understanding exactly what the code does~\cite{dorn_learning_2010}.
-\fi
+\emph{In my research, I develop and study software artifacts to support systematic inspection of found code from information interfaces programmers use when developing opportunistically.}
 
-As opposed to physical crafts like wiring up circuits or crocheting, programming is often text-heavy, and lacks the convenient physical affordances that convey whether an error has occurred (a mis-stitching or a wire to an incorrect terminal) while also involving the use of potentially many unknown components in the forms of APIs.
-For example, for our upper-division user interface design course, students may be expected to learn new APIs for notifications, message passing, connecting to Twitter, and reading values from the system sensors, all in the same piece of code, within a couple of weeks.
-Reasoning about the work produced at an atomic level, in this case functions, the arguments that are provided to them, and how these connect into larger blocks of code, is costly in the moment, so programming learners may not develop a serious understanding of the primitives out of which they build their programs.
-This is a serious problem: students who don't understand these components encounter substantial difficulties debugging their programs and, as a result, developing systems with complex behavior in a short time.
-(Because of the ease of copy and paste, the complexity of past work incorporated is gleefully hidden away --- until it comes to time for either error correction or designing new functionality, when major obstacles are encountered.
-How do we prevent these struggles from occurring in the first place through new interactions?)
+The theoretical deliverables of this work is establishing how systematic habits amidst opportunistic practice will improve:
+(\emph{a}) programmers' mental models of reused code, libraries and tools used they develop
+(\emph{b}) enable more accurate feasibility assessments of upcoming tasks (for example, see~\cite{ko_role_2011})
+(\emph{c}) reduce design barriers~\cite{ko_six_2004} when planning new functionality
 
-This is an entirely new environment for both development as well as the learning of a craft, in the speed of reuse of past work of others, the scale of the group of practitioners who practice it, and the shallowness of knowledge about a complex craft to repeat the techniques produced by others.
-This ultimately leads us to a question: In today's development paradigms where programmers reuse code snippets and programming opportunistically at high speeds, what interventions must information seeking tools and development environments provide to encourage critical engagement and understanding of code for programmers who have not yet developed or lack the scaffolding to develop discipline and workflows for seriously understanding the code they are using?  Despite a growing prevalence of opportunistic programming as a practice, current research in programming behavior, languages, search interfaces, and tools has left this question largely untouched.
-(In the interest of space, only a few examples of related research are referenced here.) However, with large numbers of programmers learning the craft through online resources, this problem becomes large scale and, due to the fact that some of these programmers may some day write personal code that is shared online, crucial to solve.
-
-In my research, I instrument today's current programming tools with components reminiscent of intelligent tutoring systems that encourage critical engagement with found code for programming learners.
-Through this research, I hypothesize that interventions for programming learners increase not only programmers' conceptual understanding of the code they develop, but also enable more accurate feasibility assessments and code design in future work.
-Furthermore, I develop software that embodies these interventions, assessing both the points of contact where these interventions should occur (at copy? At paste? At a timer completion?), the types of questions that can be generated.
-
-The work that I develop falls into three areas of areas that are currently lacking in providing critical support to opportunistic programmers who lack formal process when learning about the code they use:
-
-\begin{itemize}
+The artifacts that I develop belong to two themes:
+\begin{itemize}[noitemsep]
 \item Techniques for automatically generating instructive explanations and demonstrations of found code
 \item Interfaces for critical inspection of alternatives when selecting code for reuse
-\item Intelligent tutoring-based interventions in the browser and development environment that encourage critical, just-in-time engagement with reused code
 \end{itemize}
 
-I have currently made progress on the first two of these three projects.
-In the first research thrust, a recent paper I recently presented at VL/HCC, named Tutorons, explored techniques for automatically processing web content, detecting and explaining cryptic programming languages in regions of code through natural languages and demonstrations of example data.
-In a small user study, the system was shown to reduce the number of accesses to external documentation needed to modify online code to perform new tasks.
-Towards the second thrust, I have taken preliminary efforts to developing a visual search interface for StackOverflow questions that have a multitude of answers to ask the question: what visual affordances and interactions enable the selection of the most appropriate code examples and explanations when many sources claim to solve a user's problem?  Towards the third thrust, preliminary studies have revealed a need for more critical engagement in coding to enable the development of more secure code.
-My past work in intelligent tutoring games (ToneWars) provides a tangential knowledge of the techniques in effective learning interventions, although further work will be needed to adequately address this problem.
+I have developed the artifacts that enable exploration within both of these themes, and published a first paper on the first of the two themes.
+Toward the first, a paper I presented at VL/HCC explored techniques for automatically augmenting code in online examples with natural languages explanations and demonstrations of code.\footnote{%
+The Tutorons system was implemented as both a browser plugin and a standalone JavaScript library, and can be viewed in action on \url{www.tutorons.com}.
+}
+We put forward a set of four guidelines to inspire the development of context-sensitive help:
+(\emph{a}) leverage multiple representations to illuminate high-level intent and enable low-level understanding of syntax
+(\emph{b}) be concise --- skip static explanations and focus on dynamically generated content
+(\emph{c}) reappropriate existing documentation
+(\emph{d}) inspect code examples on a large scale to support explanations of common usage.
+In a nine-participant user study, the system was shown to reduce the number of accesses to external documentation needed to modify online code to perform new tasks.
+\textbf{Next steps will include \ldots}
+
+Towards the second goal, I and co-developer have built a visual search interface for StackOverflow, a popular online programming Q\&A.
+In response to Brandt et al.'s recommendations to develop tools that support ``comparing, reasoning about, integrating, and modifying found code''~\cite{brandt_opportunistic_2008}, we developed StackSkim, \emph{a visual search interface for exploring answers to StackOverflow questions that have a multitude of answers}.
+The interface offers rapid visual inspection of frequent libraries used for addressing the searcher's programming problem;
+through direct manipulation, users can also rapidly collect and compare similar code snippets.
+\textbf{Next steps will include \ldots}
 
 \begin{figure}%
   \centering
@@ -77,10 +79,9 @@ My past work in intelligent tutoring games (ToneWars) provides a tangential know
   }
 \end{figure}
 
-Each of these research thrusts either has relied or will rely on the development of a software system to aid programmers in understanding code during an opportunistic programming task.
-Each one also uses a mixed methods approach of observation and controlled experiments to determine how these tools indeed alter not only the task of opportunistic programming, but also programmers' behavior in selecting, understanding, and using code found online.
-
-What comes next?  More serious development of example code, and in particular, the development of 2--3 interfaces for interventions at various levels to see what level of interventions best enable programming learners to seriously learn from the code they use when using materials found in the wild world wide web to develop without learning scaffolding or an already concrete knowledge of the tools they're using.
+Each of these efforts relies on the cultivation of new software artifacts to aid programmers in understanding code during an opportunistic programming task.
+Each has already followed and will continue to follow a mixed methods approach of observation and controlled experiments to determine how these tools indeed alter not only the task of opportunistic programming, but also programmers' behavior in selecting, understanding, and using code found online.
+We are currently developing a version of Tutorons explanations that we hope will be incorporated into an introductory CS classroom's online textbook to better understand the role of automatic explanations of code for novice programmers.
 
 \section{References}
 \printbibliography[heading=none]
