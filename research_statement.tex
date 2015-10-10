@@ -18,7 +18,7 @@ This relates to the NSF broader impact of \textbf{increasing and improving publi
 
 \section{Background}
 
-Clarke~\cite{clarke_what_2007} introduced the persona of an \emph{opportunistic developer} to describe the software developer who develops just enough of an understanding of a technology to solve a business problem.
+Clarke introduced the persona of an \emph{opportunistic developer} to describe the software developer who develops just enough of an understanding of a technology to solve a business problem~\cite{clarke_what_2007}.
 Recent studies have observed opportunistic behavior for programmers beyond business, including creative workers~\cite{brandt_opportunistic_2008} and web designers~\cite{dorn_learning_2010}.
 While this style of development enables rapid results~\cite{brandt_opportunistic_2008}, it comes with hazards:
 functionality is copied and pasted from online examples, with less attention to explanations~\cite{brandt_two_2009};
@@ -28,25 +28,26 @@ code may be written in a sub-optimal way in order to maintain flow and move on t
 Past observation confirms that the cards are stacked against typical programming documentation for maintaining the attention of those developing opportunistically.
 In human-computer interaction, Carroll writes how users learning new technologies are often too busy learning to make use of instruction~\cite{carroll_nurnberg_1990}.
 For end user programmers (those programming for personal purposes~\cite{ko_state_2011}), Blackwell's Attention Investment models how programmers carefully weigh the costs of engineering activities against perceived benefits~\cite{blackwell_psychological_2006}.
-Good software engineering practice like understanding mental models of APIs often lose in this assessment.
+Good software engineering practice, like understanding the model of an API, often loses to expediency.
 
-When programmers' focus centers on trial and error with code instead of comprehensive references, we are faced with two tasks to better support opportunistic developers in understanding found code.
-First, \textbf{relevant documentation should be moved from hidden locations on the web to the code examples they're using.}
+When a programmer's focus centers on trial and error with code instead of making sense of comprehensive references, we face two tasks to better support the opportunistic developer in understanding found code.
+First, \textbf{relevant documentation should be moved from hidden locations to the code examples they arre used in.}
 Second, \textbf{documentation should be provided in a context-relevant, easy-to-read, short form.}
 
-Amidst this milieu, a growing corpus of online high-quality ``crowd documentation''~\cite{parnin_crowd_2012} provides new environments in which to support context-relevant documentation and new resources to mine and serve to information seekers in a context-relevant form.
+Meanwhile, a growing corpus of online high-quality ``crowd documentation''~\cite{parnin_crowd_2012} provides new environments in which to support context-relevant documentation and new resources to mine and serve to information seekers in a context-relevant form.
 
 \section{Proposed Research}
 
-I hypothesize that new techniques for delivering context-relevant, summative documentation will help opportunistic developers in these two ways:
+I hypothesize that new techniques for delivering context-relevant, summative documentation will help opportunistic developers in two ways:
 \begin{itemize}[noitemsep,topsep=0pt]
-\item by decreasing verbosity and increased relevance, it will enable programmers to gain the same understanding of libraries in less time
-\item when presented by the code example, it can lesson the effort required to develop solutions involving unfamiliar software
+\item By decreasing verbosity and increasing relevance, it will enable programmers to gain the same understanding of libraries with less effort
+\item When presented next to code examples, it can lesson the effort required to develop solutions involving unfamiliar software
 \end{itemize}
 
-I propose three systems to explore and demonstrate the potential of context-relevant, summative programming documentation for opportunistic development.
-The first of these systems has already been built and results presented with an Honorable Mention VL/HCC~\cite{head_tutorons_2015}, a main conference on end user programming.
-Prototype for the other two have been built.
+I propose three systems to demonstrate the potential of context-relevant, summative programming documentation.
+The \textbf{intellectual merit} of the first of these systems has already been recognized:
+the Tutorons work has received an Honorable Mention VL/HCC~\cite{head_tutorons_2015}, a main conference on end user programming.
+Prototypes for the other systems two have been built.
 They must undergo substantial further development and evaluation.
 
 \subsection{Tutorons}
@@ -54,26 +55,31 @@ They must undergo substantial further development and evaluation.
 Programmers often encounter syntax that they don't understand in web tutorials that has not been explained by the tutorial author.
 A Tutoron is a routine on a public server that can detect code snippets in the markup for tutorial pages, and synthesize English prose, diagrams, and usage examples to describe this code.
 When a programmer navigates in a browser instrumented with the Tutorons plugin, programmers can view context-relevant explanations of high-level intent of code and its low level syntax for snippets automatically detected by the server.
-This was implemented for three languages commonly embedded in tutorials: the wget Unix command line, CSS selectors, and regular expressions.
+Tutorons were implemented for three languages commonly embedded in tutorials: the wget Unix command line, CSS selectors, and regular expressions.
 An initial in-lab usability study has shown that such adaptive explanations can reduce accesses to external documentation on the Web (Fisher's exact test, $n$ = 9, $p<.01$).
 
 \subsection{StackSkim}
-It is often the case that there are many tutorials or code examples that can satisfy a programmer's information need, yet the first one programmers find is often not sufficient.
-StackSkim is a visual search interface for exploring, comparing, and selecting code and its accompanying explanations from large collections of similar examples.
-It currently provides a front-end to the >10,000,000 questions on StackOverflow, a popular programming Q\&A.
-It enables programmers to detect the most popular classes and programming structures used in collections of dozens of related answers to their questions, and locate examples with either minimal or elaborate accompanying explanation.
-A preliminary usability study revealed positive qualitative feedback, it has yet to be applied to be comprehensively evaluated.
-In future versions, we want to address two challenges: 
-(1) proper algorithms and visual affordances to highlight differences between competitive snippets
-(2) enabling interleaved inspection of instructional examples next to real code that may reveal realistic exceptions
+Often, there are many tutorials that can satisfy a programmer's information need, but the first one programmers find is not sufficient.
+StackSkim is a visual search interface for exploring, comparing, and selecting code from large collections of similar examples, providing a front-end to millions of questions from StackOverflow, a popular programming Q\&A.
+The system has yet to be applied to be comprehensively evaluated, and we seek to address two challenges:
+(1) building algorithms and visual affordances to detect and highlight differences between snippets serving the same purpose
+(2) interleaving examples with production code mined from Github to reveal common exception cases that occur in practice.
+% It enables programmers to detect the most popular classes and programming structures used in collections of dozens of related answers to their questions, and locate examples with either minimal or elaborate accompanying explanation.
+% A preliminary usability study revealed positive qualitative feedback, 
 % The primary technical contribution for both of these steps will revolve around comparison of pre-parsed code examples from the relatively clean repositories of example and production code on StackOverflow and Github, respectively.
 
 \subsection{CodeConverter}
-When developing opportunistically, programmers have a set of go-to tools they rely on to get work done (Brandt et al. 2008).
-This project, our most experimental, seeks to provide methods for enabling programmers to write in a new language in a familiar domain using simple statements of languages they are comfortable with.
-Instead of learning a language's syntax through a separate tutorial, relevant feedback will be provided as comments that accompany expansions of code to the target language---that is, documentation will only be provided as programmers first encounter the features.
-To maintain feasibility, we will focus on recognizing and translating language for small statements for restricted problem sets, based on rules rather than machine translation (e.g.,~\cite{karaivanov_phrase-based_2014}).
+When developing opportunistically, programmers rely on known languages to get work done~\cite{brandt_opportunistic_2008}.
+To reduce the barrier of working with unfamiliar languages within the same domain, we propose an experimental system called CodeConverter.
+When learning a new language, programmers will write simple statements of a familiar language, and expand them to see the semantic equivalent in the target language.
+With CodeConverter, a new language's syntax will be described through the translations that appear---relevant descriptions will be provided as comments accompanying expansions instead of as a tutorial with a preset path.
+For feasibility, first studies will focus only on rule-based translation of small statements for restricted problem sets, rather than using machine translation (e.g.,~\cite{karaivanov_phrase-based_2014}).
 % The eventual evaluation will focus on having programmers from a local hackerspace develop code for an embedded platform with an unfamiliar language but with familiar tasks.
+
+Evaluation of each of these systems will include mixed methods.
+Success of the tools in reducing programming effort will be measured by, for instance, task completion rates and reference to external documentation for in-lab usability studies with programmers.
+Qualitative feedback will be collected from all studies to refine our understanding of programmer information seeking challenges and our systems' affordances.
+The result will be a set of software artifacts to new programmer workflows for making use of documentation during opportunistic development.
 
 \if 0
 \begin{figure}%
@@ -101,7 +107,7 @@ Also point out crises in developing technologies that are caused by programmers 
 
 This work can be seen as an effort to reconcile the best practices of the ``systematic developer'' with recent tendencies of ``opportunistic'' programming habits.
 \textbf{I could add in a mention of Blackwell's Attention Investment model here to mention why it is that programmers may program opportunistically, and why we should and how we can vary incentives and costs.}
-Clarke~\cite{clarke_what_2007} introduced the persona of an \emph{opportunistic developer} to describe a software developer who writes code in an ``exploratory fashion'' and develops a ``sufficient understanding of a technology to understand how it can solve a business problem''.
+Clarke introduced the persona of an \emph{opportunistic developer} to describe a software developer who writes code in an ``exploratory fashion'' and develops a ``sufficient understanding of a technology to understand how it can solve a business problem''.
 (This contrasts with the \emph{systematic developer}, who writes code defensively and ``develops a deep understanding of a technology before using it''~\cite{clarke_what_2007}.)
 In their study of exhibit designers at San Francisco's Exploratorium interactive science museum, Brandt et al.\ reported on a group who engaged in \emph{opportunistic programming} who weren't professional developers~\cite{brandt_opportunistic_2008} but were very much what might be considered as end-user programmers --- those developing code for personal rather than public use~\cite{ko_state_2011}.
 
