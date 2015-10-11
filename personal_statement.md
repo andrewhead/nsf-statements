@@ -1,3 +1,16 @@
+## Ethos
+
+* Virtue
+    * Opportunistic programming is precisely the type of programming often exhibited by people working technology into their lives without a formal profession (Lost While Searching, Brandt's first study)
+    * The body of end user programmers is huge (Scaffidi)
+* Craft
+    * Tutorons progress: Honorable Mention at VL/HCC 2015, a major conference in end-user programming
+    * StackSkim progress: a research prototype built and tested through a first iteration
+    * I have been active in research for 2 years now, with publications in multiple circles
+* Disinterest
+    * The existing tools are yet prototoypes.  There are limitations to these tools
+    * It is true that much of this work is motivated by recent insights by Brandt
+
 # Outline
 
 ## Motivations
