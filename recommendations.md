@@ -2,12 +2,44 @@
 
 Would you like additional material from me, and if so, in what form would be most helpful to you?
 
-Broader Impacts
-* Bjoern: BiD seminar co-coordination, Inventioneering, could mention Astute, CS160 teaching
-* Marti: erm..., involvement with OEV project??
-* Jingtao: cross-disciplinary focus at Pitt.  Initial exposure to leading another undergraduate in research, involvement with the research group
 
-Intellectual Merit
-* Bjoern: Solid academic record at Berkeley... work on the Lamello and Tutorons project
-* Marti: Tutorons project, InfoVis, ToneWars, (NLP, search, information retrieval stuff)
-* Jingtao: Work has been recognized (at the undergraduate reserach fair).  Published first work together as an undergraduate, couple-year involvement in editing scripts for demo videos and working on papers.
+## Broader Impacts
+
+* Head TA for CS160
+* Focus of topic on end-user development.  This is clearly something that resonates with you too, so if there's anything noble you want to mention about its intent, then that would be great to mention here!
+* BiD seminar co-coordination
+* Arranging the UIST reception, getting community together
+* Helping out with Klemmer visit
+* Inventioneering
+* Astute project tested at the museum
+
+### Marti
+
+* involvement with OEV project??
+
+### Jingtao
+
+* Cross-disciplinary focus at Pitt
+* Worked with another undergraduate to give them opportunities to contribute to research
+* Ability to collaborate with other students while in the lab
+
+
+## Intellectual Merit
+
+### Bjoern
+
+* Solid academic record at Berkeley
+* Work on the Lamello
+* Success with the Tutorons project
+
+### Marti
+
+* Tutorons project
+* Information visualization for StackSkim
+* ToneWars (if felt like pioneering work)
+
+### Jingtao
+
+* Work recognized in Pitt academic community---at the undergraduate reserach fair
+* Published first work together as an undergraduate
+* couple-year involvement in editing scripts for demo videos and working on papers
