@@ -6,28 +6,30 @@ Challenges when first starting a new job
 
 ## A Revised Vision
 
-After taking on their first technical positions, programmers will inevitably need to start learning and finding tools on their own (Exter & Turnage).
-A recent rise in crowd-developed, high-quality online documentation (Parnin et al.) has made it easier than ever for programmers to rely on the web to find examples of how to use unfamiliar features of languages and APIs.
-But the path of reliance on online documentation is fraught with hazards:
-programmers working in an "opportunistic" rather than "systematic" manner have been observed to develop subpar code that just satisfies the intended functionality, rewrite code that perhaps a stabler library could support, and spend minutes debugging pasted code (Brandt a, Brandt b).
+When taking on a job for the first time, a programmer inevitably needs to start finding information and learning on their own (Exter & Turnage).
 
-During a CS student's upper division courses or personal projects, they will have their first opportunities and needs to satisfy their information needs often exclusively from online sources.
-This will be centered around the programming example, which has been identified as one of the most useful pillars of CS education (reference from the Java examples book).
-This raises some critical questions:
-How do programming students engage with online examples?
-Do they actually learn new concepts from them, e.g., enough to design new code in the future?
-How often do they reuse buggy code or code with security flaws?
-And what systems and interventions can match student programmers' rhythm of information seeking while helping them develop solid mental models (LaToza et al.) of the code they use to enable them to use these examples in new code in the future?
+Recently, comprehensive (Parnin et al.), high-quality (Mamykyna et al.) crowd-developed online documentation has made it easier than ever for programmers to fall back on the web to find examples of how to use unfamiliar language features and APIs (Brandt).
+But using online documentation can be fraught with hazards.
+When learning just the bare minimum to do a coding task (i.e., programming "opportunistically" (Clarke)), programmers develop shoddy code that just satisfies the intended functionality, reimplement code that stable libraries could support, and spend time debugging code (Brandt a, Brandt b).
+
+A CS student's upper division courses and project work often offers them their first opportunities to satisfy information needs to using these online sources almost exclusively.
+And while code examples have been identified as a critical component of CS education (ref), we do not understand the role of the online code example in upper division programming learning.
+One reason is that online code examples have only recently become available to programmers on a large scale and with reliable quality, in many ways in part to the creation of StackOverflow, a massive, popular programming Q&A, launched in 2008.
+
+Several important questions about the role of the online code example in non-formal learning are significant to improving CS Education in upper division courses and the ability of newly-graduated programmers to learn on the job.
+These questions include:
+When copying and pasting is easy, do programmers actually learn new concepts from code examples, e.g., enough to design new code from the same components?How often do they reuse code that contains bugs or potential security holes and what is the severity of these examples?
+What systems and interventions can supplement information seeking to encourage successful learning and reuse?
+
+Surprisingly little is known about these questions.
+Recent work has shown reliance on example reuse for end-user programmers (Brandt), as well as hurdles and strategies for and non-programmers (Ichinco).
+It is clear from my experience debugging code with students as a student instructor that reuse occurs frequently in the upper division CS classroom, and that hastily pasted code is the cause of confusion and errors.
+While a large body of work in CS Education has proposed and evaluated curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.), the online code example is an important learning resource that we don't understand.
+**My proposed research seeks to understand the affordances and pitfalls of student programmers working with code examples, to categorize and count the mistakes made, the frequency of knowledge gained, and the opportunities to build interventions in the form of novel interfaces that can to enable students to effectively work with and benefit from online examples.**
+
 This is critical, as code is often reused without any up-front plans (Mackay).
 Meanwhile, a firm understanding of technologies used is core to an understanding that will influence how programmers encounter and make use of new technologies in the future (Exter & Turnage).
 
-Surprisingly little is understood about student programmers using examples from the web, what they learn or don't learn from them, and the mistakes they make.
-Yet a student programmer's ability to fall back on the web has never been easier than today (Parnin et al.)
-Some recent work has focused on better understanding example reuse for end-user programmers (Brandt) and non-programmers (Ichinco).
-For instance, it's clear that the student programmers are capable of pasting together solutions from diverse online sources, as these are many of those who are observed in recent literature on "opportunistic" forms of development (Brandt papers).
-I can confirm this from personal experience as a teaching assistant in an upper-division CS classroom.
-Much recent and past work in CS Education has been hugely influential in making proposals and evaluations of how to design curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.) to support "formal education" (using terminology from Exter & Turnage).
-This work seeks to understand, on a quantitative level that can inspire future research, the mistakes students programmers make when working with code examples, the opportunities that are lost for mastery of new concepts, and the interventions that can be made to enable students to effectively work with and benefit from online examples.
 
 ## A Revised Outline I
 
