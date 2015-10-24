@@ -23,7 +23,6 @@ Would you like additional material from me, and if so, in what form would be mos
 * Worked with another undergraduate to give them opportunities to contribute to research
 * Ability to collaborate with other students while in the lab
 
-
 ## Intellectual Merit
 
 ### Bjoern

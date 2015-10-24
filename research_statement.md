@@ -1,5 +1,91 @@
 # Outline
 
+## A Revised Outline
+
+Little is understood about student programmers in the wild.
+There has been tons of research on resources to support student programmers via textbooks, MOOCs, lectures, and assignments.
+However, mystifyingly little is known about the *precise causes* of frustration and mistakes when programmers work in the wild, that is, problem-solve with the aid of online resources.
+There is no question that student programmers do this.
+Existing studies of programmers in academic settings with academic participants feature programmers who are clearly comfortable searching online.
+This work has offered anecdotal evidence of mistakes made when adapting code examples for end-user programmers (reference Brandt, Stylos, etc.)
+
+This is important for two reasons:
+First, it ensures greater academic success.
+Second, it improves the ability of programmers to understand and reuse code in the future, and overcome design barriers.
+Third, it prepares them for their future jobs, which may involve a large amount of code reuse (information on how SE reuse code, Learning on the Job)
+
+Where there is a strong need is in developing an understanding of the exact **cognitive causes** where programmers make mistakes reusing examples from the web, the rate at which these occur, and their severity in terms of insurmountable barriers, time lost, and grades or professional state affected.
+This work seeks to develop a strong, principled, observation and experiment-based understanding of the precise errors that cause students to make errors when reusing code.
+Furthermore, it seeks to understand representations of code that can best suit programmers' information needs (Pirolli...) in the moment.
+
+This work will focus on such-and-such studies, building on such-and-such theory.
+We are interested in the following questions:
+* How do note-taking techniques with code influence influence ability to respond to the understanding and design barriers?
+* How can we code the classes of errors that programmers encounter on the web (talk about coding)
+* What is the trade-off of attention, engagement, and learning outcomes for representations for code?
+
+Experimental work will involve (observation of software engineering teams in Berkeley's UI Design course and software engineering course), in-lab studies with pre-planned reuse tasks using both high- and low-quality crowd documentation with both open-ended and close-ended tasks.
+
+We are deeply interested in the representations that will help programmers to problem-solve best.
+This work has been pursued by the Idea Garden.
+A major platform I have already built is the perfect test-bed for testing these theories.
+It is called Tutorons, and enables the automatic detection and markup of online code.
+We can test our, as well as run in-the-wild deployments to monitor time of viewing the examples, whether copying and pasting occurs after viewing the examples, and so on.
+Such a plugin may easily fit into the development environments (Android Studio) or the web, used in the current CS160 UI design course.
+Interesting questions include additive comments, and integrating with problem-solving strategies.
+
+The findings from this work can be applied to build better end-user programming systems and systems for professional programmers too.
+
+The upshot: We need statistics about in-the-wild programming information seeking for students about causes and effects.  We need tools to support them too.  We have the interest in producing the first, and the ability to produce the second one, too.
+
+Pressing questions:
+* Potential to introduce security loopholes
+* Introduction of bugs into production code based on the project pursued
+* Opportunities for mental model-building when developing code
+* Interventions to improve programmers' ability to engage with and learn from code
+* How often is code reused, pointing to long-standing bugs or errors?
+* How often is code reused from repositories that are non-commercial?  Personal?  That don't have tests?  That are made by one developer?
+
+### Study sheet
+
+SIGCSE, Learning@Scale, ICPC, ICSE
+* Students coding as a Bricolage
+* Point to state of the art of current CS instructional material
+
+Science Education
+* Student engagement with materials and tendencies to skim
+
+CHI, VL/HCC
+* Challenges in reusing code
+    * Brandt a: programmers work near the example
+    * Brandt b: code satisficing to move quickly
+    * Kim et al.: personal reuse of code
+    * Ichinco: in visual environment, critical moments (this is a great overview)
+    * Dorn & Guzdial: a feeling of "getting nowhere"
+    * Pragmatic Programmer: bugs come with code
+* Points to:
+    * Overly verbose code
+    * Tendency to skip well-supported practices
+    * Potential bugs
+
+Automated Hints and Explanations
+* AutomataTutor
+* Chris Piech, Rich Bearnik, some Armando
+
+## Revisions
+
+Jingtao's suggestions:
+
+* Tie this into some larger, agreeable societal problem.  For example, STEM enrollments have been decreasing in recent years, perhaps due to student perception of the difficulty of the curriculum.  Will this form of documentation improve enrollments?
+* Feel free to shoot high, towards a dream that may or may not be achieved (ambitious, and *perhaps* unrealistic)
+* Take a top-down approach.  The systems follow from the dream, and not the other way aroud.  Unify all three of the projects under a dream.
+* Consider adding in a mid-term goal to give the direction more definition
+* Make sure to differentiate your own focus from Bjoern's, his co-authors', and Peggy's, who all work on similar problems.  Explain why your solution is unique and worth pursuing
+
+My suggestions:
+
+* Make sure that the research findings are relevant and important to a Human-Computer Interaction researcher.  This may require spelling out the point.
+
 ## Title: Building Context-Relevant, Summative Forms of Programming Documentation to Support Opportunistic Development
 
 ## Background
