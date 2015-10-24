@@ -1,8 +1,36 @@
 # Outline
 
-## A Revised Outline
+## Information needs
 
-Little is understood about student programmers in the wild.
+Challenges when first starting a new job
+
+## A Revised Vision
+
+After taking on their first technical positions, programmers will inevitably need to start learning and finding tools on their own (Exter & Turnage).
+A recent rise in crowd-developed, high-quality online documentation (Parnin et al.) has made it easier than ever for programmers to rely on the web to find examples of how to use unfamiliar features of languages and APIs.
+But the path of reliance on online documentation is fraught with hazards:
+programmers working in an "opportunistic" rather than "systematic" manner have been observed to develop subpar code that just satisfies the intended functionality, rewrite code that perhaps a stabler library could support, and spend minutes debugging pasted code (Brandt a, Brandt b).
+
+During a CS student's upper division courses or personal projects, they will have their first opportunities and needs to satisfy their information needs often exclusively from online sources.
+This will be centered around the programming example, which has been identified as one of the most useful pillars of CS education (reference from the Java examples book).
+This raises some critical questions:
+How do programming students engage with online examples?
+Do they actually learn new concepts from them, e.g., enough to design new code in the future?
+How often do they reuse buggy code or code with security flaws?
+And what systems and interventions can match student programmers' rhythm of information seeking while helping them develop solid mental models (LaToza et al.) of the code they use to enable them to use these examples in new code in the future?
+This is critical, as code is often reused without any up-front plans (Mackay).
+Meanwhile, a firm understanding of technologies used is core to an understanding that will influence how programmers encounter and make use of new technologies in the future (Exter & Turnage).
+
+Surprisingly little is understood about student programmers using examples from the web, what they learn or don't learn from them, and the mistakes they make.
+Yet a student programmer's ability to fall back on the web has never been easier than today (Parnin et al.)
+Some recent work has focused on better understanding example reuse for end-user programmers (Brandt) and non-programmers (Ichinco).
+For instance, it's clear that the student programmers are capable of pasting together solutions from diverse online sources, as these are many of those who are observed in recent literature on "opportunistic" forms of development (Brandt papers).
+I can confirm this from personal experience as a teaching assistant in an upper-division CS classroom.
+Much recent and past work in CS Education has been hugely influential in making proposals and evaluations of how to design curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.) to support "formal education" (using terminology from Exter & Turnage).
+This work seeks to understand, on a quantitative level that can inspire future research, the mistakes students programmers make when working with code examples, the opportunities that are lost for mastery of new concepts, and the interventions that can be made to enable students to effectively work with and benefit from online examples.
+
+## A Revised Outline I
+
 There has been tons of research on resources to support student programmers via textbooks, MOOCs, lectures, and assignments.
 However, mystifyingly little is known about the *precise causes* of frustration and mistakes when programmers work in the wild, that is, problem-solve with the aid of online resources.
 There is no question that student programmers do this.
