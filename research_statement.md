@@ -144,6 +144,32 @@ My suggestions:
 
 * CodeConverter: when developing opportunistically, programmers have a set of go-to tools they rely on to get work done (Brandt et al. 2008).  While langauges may share similar concepts, some have key libraries for performing certain tasks that others don't.  This project proposes an experimental simultaneous method of opportunistic programming langauge learning and application.  With CodeConverter, programmers will be able to program simple statements of one language and see them converted to a new language with accompanying description describing how the code's use varies from typical the source language and how it must be modified.  The evaluation will focus on having programmers from a local hackerspace develop code for an embedded platform with an unfamiliar language but with familiar tasks.  While past work has shown machine translation of programming languages (e.g., ), our contribution will not be in this space, but rather in establishing that for a simple subset of common patterns, programming can be enabled for new platforms on familiar tasks, with improved conceptual knowledge through automatically-generated inline comments instead of external documentation.
 
+# Brainstorming
+ 
+## Evaluation techniques
+
+* Build something new with the tool (d.tools, Drill Sergeant, MixT, Sauron, Midas, Tutorons)
+* Have people do work with the interface (DigitalDesk, Telepresence, SceneSkim, NIME, Soylent, Drill Sergeant)
+* Collect ratings on the creative works produced (BluePrint, Video Digests, Underscore, Automatically Detecting)
+* Observer accuracy of the technology in performing some task (Lamello, Phrase-Based)
+* Try it out yourself and make observations (Tangible Bits)
+
+## Observation techniques
+
+* Observe people doing work in a controlled in-lab task (Two Studies, Exploring Example, Tutorons, MHP, Unfamiliar APIs, Selection-based, Reuse, Fitts' Law, Design Right, User Technology, Parallel Prototyping, Lost While Searching, Taxonomy of Errors, End-user Debugging)
+* Cluster freely available online behavior information (Personality, Uncovering Trajectories, Tie Strength)
+* Observe artifacts, make models and classify (Morphological, Tutorial Authorship, Good Code Example)
+* Ask programmers to describe their work habits (Small Matter, Learning on the Job, Opportunistic)
+* Split classroom with comparative conditions (Compositions, OEV, Coding with Intention)
+* Conduct survey about work habits (Mental Models, Who/What/How, Issue)
+* Perform data processing on a large dataset (Design Lessons, Crowd Documentation)
+* Observe programmers programming in the wild (Opportunistic, Ethnographic Study)
+* Recording and analyzing creative output (Ethnographic Study, Nonoriginal Content)
+* Observe the questions you are asked as tech support (Six Barriers, Idea Garden)
+* Large-scale controlled experiments and log analysis (Practical Guide, Example-Centric)
+* Ask programmers to show you their workspaces (Opportunistic)
+* Review themes and findings across multiple disciplines (How Bodies Matter)
+
 # Ethos planned out
 
 * Decorum
