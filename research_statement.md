@@ -24,25 +24,43 @@ How long does this code remain in use (Q4)?
 What interventions can supplement information seeking to encourage successful learning (Q5)?
 What interfaces can support more successful reuse of code found online (Q6)?
 
-Surprisingly little is known about these questions.
-Recent work has shown reliance on example reuse for end-user programmers (Brandt), as well as hurdles and strategies for and non-programmers (Ichinco).
-It is clear from my experience debugging code with students as a student instructor that reuse occurs frequently in the upper division CS classroom, and that hastily pasted code is the cause of confusion and errors.
-While a large body of work in CS Education has proposed and evaluated curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.), the online code example is an important learning resource that we don't understand.
 **My proposed research seeks to understand the affordances and pitfalls of student programmers working with code examples, to categorize and count the mistakes made, the frequency of knowledge gained, and the opportunities to build interventions in the form of novel interfaces that can to enable students to effectively work with and benefit from online examples.**
 
 ## The General Approach
 
 I can gain deeper, generalizable insight on each of these questions by following standard techniques of observation and systems evaluation from HCI.
-In each case, the critical question is **how can we simulate scenarios of web-based code reuse in a controlled setting, and measure behavior with code examples?**
+In each case, the critical question to the design of my research is **how can I simulate scenarios of web-based code reuse in a controlled setting, and measure behavior with code examples?**
 While a variety of techniques are available, I can offer the most knowledge to the academic community by observing reuse habits in two ways.
 First, I will conduct controlled lab studies to address Q1-Q4, (e.g., Ichinco &amp; Kelleher, Brandt et al., Head et al.) with dozens of participants sampled from Berkeley's large population of EECS undergraudate students.
 Second, I will conduct contextual inquiry with (Meyer & Holzblatt) with members of student groups during implementation prototypes for Berkeley's upper division user interface course, a period where discovery and testing of user interfaces within a team are likely at their prime.
 
-These will provide concrete knowledge about the pitfalls of code reuse and
+Given this knowledge, I will develop a new generation of web and IDE-based interventions for better supporting learning and reuse from online code examples.
+This body of systems will satisfy, I suspect, two major needs:
+First, the need to support better understanding of code found in the wild at lower cost via automatic explanations.
+This is a need we have already address with the Tutorons infrastructure I built for past work and will be easily adaptable to the problem at hand (Head et al.)
+Second, the need to support new forms of mental model-building, learning and interaction with code examples.
+Once again, this can be gained supported with in-situ, in-the-browser interactions akin to those.
+However, there are challenges to both building automatic help and providing it in a form that will be instantly read within the browser.
+We propose that interactions that force close inspection of code prior to pasting will enable better design with these components later on down the road.
+We will use standard techniques to measure the quality of code produced (e.g., Brandt et al.), ability to process code found anywhere (e.g., Head et al.), and user ability to complete tasks with the interface (e.g., Head et al.).
+The result will be a set of concrete software artifacts and an understanding of how these new interactions better support learning and reuse of code.
 
 ## Any Unique Materials Needed
 
+* Access to the student programmer population
+* Pilot studies of the program
+* Time to work with corpuses and online examples
+* Undergraduate student programmers to develop and maintain the code
+* Access to student programmer groups in upper division courses
+* Additional research into machine learning techniques and data mining (which I'm already in the midst of)
+
 ## Potential of Work to Advance Understanding within Science
+
+Surprisingly little is known about these questions.
+Recent work has shown reliance on example reuse for end-user programmers (Brandt), as well as hurdles and strategies for and non-programmers (Ichinco).
+It is clear from my experience debugging code with students as a student instructor that reuse occurs frequently in the upper division CS classroom, and that hastily pasted code is the cause of confusion and errors.
+From speaking with other professors, this is no uncommon occurrence.
+While a large body of work in CS Education has proposed and evaluated curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.), the online code example is an important learning resource that we don't understand.
 
 The work we produce here will be disseminated by three major means.
 Insights gathered about the challenges and strategies of programmers reusing code will be disseminated among the end-user and novice programmer communities at conferences including CHI and VL/HCC.
@@ -51,8 +69,12 @@ Finally, all programming tools developed will be made open source and available 
 
 ## Potential for Broader Impacts within Society
 
-This is critical, as code is often reused without any up-front plans (Mackay).
-Meanwhile, a firm understanding of technologies used is core to an understanding that will influence how programmers encounter and make use of new technologies in the future (Exter & Turnage).
+Learning new computer science skills "on the job" is a core competency for both professional computer science practitioners (Exter &amp; Turnage) and end-user programmers in a variety of professions (Dorn & Guzdial).
+As online snippets increase in quality, it is critical that we understand the .
+Developing solid mental models is one of the great challenges of taking on new work as a software engineer.
+When online examples threaten to obviate the need for the right mental models to get work done, it is important that we understand the learning opportunities that are missed, the software mistakes that are introduced, and the next generation of systems that can better support the development of these mental models and responsible reuse of code.
+This research will produce both this critical understanding, and will evaluate a newly-developed set of interactions to support programmers' increased reliance on the web for programming information seeking.
+I have already gained interest from faculty members in the Berkeley department for conducting a lecture on responsible code reuse that could come a result of the proposed research.
 
 ## A Revised Outline I
 
