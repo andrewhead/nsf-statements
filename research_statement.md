@@ -18,8 +18,11 @@ One reason is that online code examples have only recently become available to p
 
 Several important questions about the role of the online code example in non-formal learning are significant to improving CS Education in upper division courses and the ability of newly-graduated programmers to learn on the job.
 These questions include:
-When copying and pasting is easy, do programmers actually learn new concepts from code examples, e.g., enough to design new code from the same components?How often do they reuse code that contains bugs or potential security holes and what is the severity of these examples?
-What systems and interventions can supplement information seeking to encourage successful learning and reuse?
+When copying and pasting is easy, do programmers actually learn new concepts from code examples (Q1), e.g., enough to design new code from the same components (Q2)?
+How often do they reuse code that contains bugs, style errors, or non-idiomatic code (Q3)?
+How long does this code remain in use (Q4)?
+What interventions can supplement information seeking to encourage successful learning (Q5)?
+What interfaces can support more successful reuse of code found online (Q6)?
 
 Surprisingly little is known about these questions.
 Recent work has shown reliance on example reuse for end-user programmers (Brandt), as well as hurdles and strategies for and non-programmers (Ichinco).
@@ -27,9 +30,29 @@ It is clear from my experience debugging code with students as a student instruc
 While a large body of work in CS Education has proposed and evaluated curricula (CS1), assignments (John DeNero), and textbook examples (Borstler et al.), the online code example is an important learning resource that we don't understand.
 **My proposed research seeks to understand the affordances and pitfalls of student programmers working with code examples, to categorize and count the mistakes made, the frequency of knowledge gained, and the opportunities to build interventions in the form of novel interfaces that can to enable students to effectively work with and benefit from online examples.**
 
+## The General Approach
+
+I can gain deeper, generalizable insight on each of these questions by following standard techniques of observation and systems evaluation from HCI.
+In each case, the critical question is **how can we simulate scenarios of web-based code reuse in a controlled setting, and measure behavior with code examples?**
+While a variety of techniques are available, I can offer the most knowledge to the academic community by observing reuse habits in two ways.
+First, I will conduct controlled lab studies to address Q1-Q4, (e.g., Ichinco &amp; Kelleher, Brandt et al., Head et al.) with dozens of participants sampled from Berkeley's large population of EECS undergraudate students.
+Second, I will conduct contextual inquiry with (Meyer & Holzblatt) with members of student groups during implementation prototypes for Berkeley's upper division user interface course, a period where discovery and testing of user interfaces within a team are likely at their prime.
+
+These will provide concrete knowledge about the pitfalls of code reuse and
+
+## Any Unique Materials Needed
+
+## Potential of Work to Advance Understanding within Science
+
+The work we produce here will be disseminated by three major means.
+Insights gathered about the challenges and strategies of programmers reusing code will be disseminated among the end-user and novice programmer communities at conferences including CHI and VL/HCC.
+The systems, interventions, and techniques we generate will be instantiated in software artifacts and published at UIST, the premier conference in novel user interface technology.
+Finally, all programming tools developed will be made open source and available for immediate public use.
+
+## Potential for Broader Impacts within Society
+
 This is critical, as code is often reused without any up-front plans (Mackay).
 Meanwhile, a firm understanding of technologies used is core to an understanding that will influence how programmers encounter and make use of new technologies in the future (Exter & Turnage).
-
 
 ## A Revised Outline I
 
