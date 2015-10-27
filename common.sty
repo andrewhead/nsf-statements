@@ -1,4 +1,24 @@
-\usepackage[backend=bibtex,style=ieee,doi=false,url=false,isbn=false]{biblatex}
+\usepackage[backend=bibtex,firstinits=true]{biblatex}
+\AtEveryBibitem{%
+  \clearname{translator}%
+  \clearlist{publisher}%
+  \clearlist{address}%
+  \clearlist{location}%
+  \clearfield{pagetotal}%
+  \clearfield{isbn}%
+  \clearfield{url}%
+  \clearfield{doi}%
+  \clearfield{series}%
+  \clearfield{language}%
+  \clearfield{pages}%
+  \clearfield{volume}%
+  \clearfield{urlday}%
+  \clearfield{urlmonth}%
+  \clearfield{urlyear}%
+  \clearfield{issn}%
+  \clearname{editor}%
+}
+
 \usepackage[pdftex]{graphicx}
 \usepackage{enumitem}
 \usepackage{url}
