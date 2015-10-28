@@ -26,175 +26,113 @@ Code is fantastic.
 And abysmal.
 And great.
 
-It's a great dichotomy---code enables exceptional technical and creative power, but it's also among the most cognitively demanding things a person can make.
+It's certainly a dichotomy---code enables exceptional technical and creative power, but it's also among the most cognitively demanding things a person can make.
 When I discovered MATLAB at age 19, code ended my days as an academic nomad.
 It led me to computer engineering and an intense preoccupation with how to build systems.
-% Ever since, the satisfaction has never left from adding a new programming language to my portfolio, picking up a new machine learning algorithm, or launching a server with a quirky web app.
-Now, six years after working with glorious, awful code, I am certain:
+Now, six years after working with glorious, horrible code, I am certain:
 to write terrific code, people must be inspired and helped to methodically approach their struggles with code.
-My role in academia and engineering is to \textbf{help people more efficiently write great code}.
-% It is only through focus in one of the most cognitively demanding tasks that we expand the bounds of our understanding and capability to design with the digital world.
+My role in academia and engineering is to help people more efficiently write great code.
 
-% Over time, a desire to learn and build has evolved into a mission to let other people discover their own late-life love for code, if they choose, to find empowerment in the ability to understand and create digital systems.
 For most of the 90 million estimated programmers in the U.S., code is a part of the job.
 It is a skill learned just well enough to do work.
 Programs are pieced together as bricolage for professionals and non-professionals alike.
-As programmers increasingly turn to online code examples to light the path to quick development, I want to help programmers develop long-term proficiency for their code.
-I want to \textbf{understand and improve programmers' workflows for learning from and reusing code}.
-
-\if 0
-Each of us is driven by necessity, and sometimes passion or curiosity, to compute.
-Though it only takes a quick visit to the nerd-centric web comics ``XKCD'' or ``PhD Comics'' to realize an inconvenient truth---
-the code that we write as academics, students, and even computation practitioners is hilariously awful.
-\fi
-
-% During these moments where we need a new program, we need all the help we can get to comprehend and adapt that code.
-% We also need to recognize that programming is one of the most cognitively demanding things any one of us can do.
-% I place myself squarely within the camps of passion, necessity, and curiosity.
+As programmers increasingly turn to online code examples to light the path to quick development, I want to help programmers develop long-term proficiency in their code.
+I want to \textbf{understand and improve programmers' workflows for learning from and reusing code examples}.
 
 % Research Evolution and Progress
 
-% This inspires my recent, current, and future research to improve our understanding of programming in the wild and to understand the design of interventions that help people make better use of code outside the classroom.
+My interests and competency in this research began with my first undergraduate research in human-computer interaction---a project to build and evaluate a system for end-user programmers.
+I contributed to e-Chimera, a visual programming environment that equipped social scientists and psychologists with tools to rapidly develop mobile experiments.
+As an undergraduate doing research for the first time, my work was in design and implementation.
+I proposed and implemented features for a multi-level graphical editor that allowed a user to specify a mobile experiment at multiple resolutions simultaneously.
 
-Over time, my research has led me from a general interest in human-centered design to a desire to build great ways for interacting with online code.
-Though oddly enough, my first research experiences were in end-user programming.
-I worked with Jingtao Wang and Wencan Luo from the University of Pittsburgh to develop a system called e-Chimera.
-Writing mobile apps is exceptionally difficult.
-But psychology and social science researchers could benefit immensely from building in-the-wild experiments that participants could engage with on mobile devices.
-My work involved proposing programming new graphical editor-based interactions that enabled these users to program mobile apps.
+The system was never published, and the usability evaluations I helped conduct have not yet been shared.
+However, e-Chimera set two inspirations I uphold today:
+First, the right representations of code make programming and code modification effortless.
+Second, today's technology allows interactions to be embedded anywhere for in-the-wild use.
 
-And while my work was largely design and implementation, it set two trends for my on-going research.
-First, it became clear that \emph{some representations of code could make people far more effective at developing}.
-Second, it exemplified how \emph{today's pervasive technology makes it possible to develop programs for in-the-wild, just-in-time use}.
+During my transition to graduate school, I sharpened my skills as a researcher in human-computer interaction.
+Collaborating with Jingtao Wang, I served as the primary researcher on the ToneWars project.
+I conducted interviews, iteratively developed a serious game with a pedagogical focus, conducted usability tests, and presented the work at Intelligent Tutoring Systems 2014~\cite{head_tonewars_2014}.
+When I arrived at the Berkeley Institute of Design, I collaborated with Valkyrie Savage on Lamello.
+We researched a new method of designing passive acoustics-based tangible input devices that could be 3D printed.
+My contributions to the algorithm and evaluation of the system were included in a paper that turned out to be my first publication at CHI~\cite{savage_lamello_2015}, a premier conference in HCI\@.
 
-I sharpened my skills as a researcher in human-computer interaction through two research projects during my transition into graduate research.
-For the ToneWars project, I served as primary researcher on a project for the first time.
-I developed, tested, and presented a system for research~\cite{head_tonewars_2014}.
-After beginning my study at the Berkeley Institute of Design, I collaborated with Valkyrie Savage, Bj\"{o}rn Hartmann, and researchers from Adobe on Lamello~\cite{savage_lamello_2015}.
-This system explored new ways of designing passive acoustics-based tangible interactive devices that could be fabricated on a 3D printer.
-My contributions to the algorithm and evaluation of the system were included in a paper that was my first publication at CHI, a premier conference in human-computer interaction.
+In January, I began to pursue my own research focused on a broad goal of helping people efficiently write great code.
+Advised by Bj\"{o}rn Hartmann and Marti Hearst, our group had a powerful synergy.
+Bj\"{o}rn is a leading researcher in development practices for programmers and makers, and Marti is an expert in information seeking interfaces.
+Our work evolved into the Tutorons project.
+It explored how the browser can be instrumented to detect and explain the unexplained code that appears in web tutorials.%\footnote{\url{www.tutorons.com}}
 
-Last January, I started pursuing my own research with Bj\"{o}rn Hartmann and Marti Hearst.
-This time, the research focused on helping people efficiently write great code.
-Our group offered a powerful synergy, with two leading researchers in complementary fields---Bj\"{o}rn in development practices for programmers and hackers, and Marti in information seeking interfaces.
-Our work, the Tutorons project, explored \emph{how the browser can be instrumented to detect and explain the unexplained code that appears in web tutorials}.\footnote{\url{www.tutorons.com}}
+The project developed rapidly.
+For three languages frequently embedded and unexplained in web tutorials---regular expressions, CSS selectors, and the wget Unix command---I built ``Tutorons''.
+Each Tutoron was a routine on a web server that automatically detected the code from fragmented snippets embedded in HTML, and generated explanations of found code.
+The explanations they built were rich, including English prose descriptions and usage examples.
+Around these artifacts, I formulated design guidelines for automatic explanations of code on the web.
+An in-lab study revealed that the explanations reduced the number of external documents programmers accessed for a set of programming tasks.
+Quantitative evaluation showed promise for automatic detection of code in web tutorials.
+Tutorons aimed to reduce the cost of understanding and modifying code that programmers found on the web.
 
-The project developed rapidly and shows signs of early success.
-I developed design guidelines for automatic explanations.
-Then I built them---code detectors, English prose explainers, and usage example generators---for code that's found on the web.
-I did this for a variety of languages that often appear embedded and unexplained in online tutorials.
-An in-lab study I conducted revealed that the explanations reduced the number of external documents programmers access in a set of programming tasks.
-Quantitative evaluation showed promise for automatic detection of code in web tutorials as programmers browse the web.
-
-I very recently presented Tutorons at VL/HCC 2015, a prime conferences for end-user programming research~\cite{head_tutorons_2015}.
+I presented Tutorons at VL/HCC 2015, a prime conference for end-user programming research~\cite{head_tutorons_2015}.
 The work was well-received, gaining a nomination for Best Paper.
-% My peers and mentors in the field were interested in applying automatic explanations of code to the IDE, to generate hints for alternate implementations, and to support a diversity of problem-solving strategies.
-
-Tutorons revealed gaps in our understanding of how programmers make use of online examples.
+But studying the background for the work revealed gaps in our understanding of how programmers make use of online examples.
 Existing work offers evidence of programmer difficulties reusing code.
 However, there is no comprehensive catalog, or figures on the frequency or severity, of problems programmers encounter when reusing online code.
 % ut existing techniques cannot build upon this missing catalog of errors.
-This missing work describes a group of programmers often left behind by current research: the upper division CS student embarking on their first open-ended projects, and the freshly minted software engineer.
-Building a better understanding of this group and tools to support it has the potential \textbf{increase and improve public engagement with science and technology}, and \textbf{improve STEM education}.
-% I look forward to understanding this group and a critical issue they face, which is the reuse of code from examples.
+
+This missing work will be the focus of my PhD study.
+It will document a group of programmers often left behind by current research:
+those engaging in open-ended projects for the first time without a systematic approach to code foraging and reuse.
+This group includes upper division CS students, and software engineers that have freshly graduated.
+Achieving this understanding has the potential to both \textbf{improve STEM education} and to \textbf{increase and improve public engagement with science and technology} for these programmers.
 
 % Outreach: Teaching experiences
 
-My research aims at a higher-level goal of \textbf{helping people write cood code efficiently}.
-In the rest of my life, I take a step back from my focus on creating programs to focus on enabling others to thrive within a culture of design, research, and making.
+My research aims to \textbf{help people write good code efficiently}.
+Beyond the lab, my goals broaden.
+When I came to Berkeley, I found a rich network of peers to support the ideation and execution of superb design and research.
+Within this community, I strive to enable others to thrive within a culture of design and research.
 
-I discovered one great channel for fostering and encouraging design and making by teaching.
-This last summer, I taught as the lead teaching assistant for an important topic within the CS Education curriculum---human-centered design.
-For many students, Berkeley's course on user interface design is the first time they learn and practice need finding, problem definition, interface programming for state of the art hardware, and presentation skills.
-I saw large improvements from the students in these regards.
-We achieved historically high attendance throughout the term, with around 50\% attendance a full 2/3 of the way through the term.
-One group I regularly advised was awarded by judges the best prize out of all of the projects.
-I also saw huge gains in presentation quality after a lecture where I instructed on methods of how to improve presentations.
+One channel through which I foster design is teaching.
+Last summer, I taught as the lead teaching assistant for Berkeley's upper division user interface design course.
+For many students, this course will be the first (and perhaps only) time they learn and practice need finding, problem definition, interface programming for state of the art hardware, and presentation skills.
+Throughout the summer, I and the other instructors worked hard to develop new project, lab, and review materials.
+It paid off with substantial student engagement and growth.
+At review sessions, we achieved historically high attendance, with around 50\% attendance 2/3 through the term.
+I saw one group I regularly critiqued rapidly and effectively iterate to develop a smartwatch-based haggling assistant app that won first prize at the end-of-semester poster fair from our invited judges.
+After review sessions on presentation design, we saw students incorporate wordplay and skits into their lightning talks.
 
-Teaching this course fed back into my desire to inspire efficient, clean coding practices among a group who likely did not have much experience in it.
-Students frequently heard me directing them to the superb Android Developer Guide as a way to develop a strong mental models of the APIs they were using.
-I also gained first-hand knowledge of the difficulties programmers have when trying to learn new APIs informally on some challenging, open-ended programming assignments.
-I addressed these problems by asking questions, by asking students to share solutions with each other, and directing students to ask more about the problems they encountered.
-After these first experiences in integrating disparate components of mobile APIs, I saw phenomenal final projects leveraging diverse APIs.
+Teaching this course fed back into my desire to inspire efficient, clean coding practices among a group who did not seem to have much experience in it.
+Students frequently heard me (perhaps to their chagrin) directing them to the Android Developer Guide as an investment to develop a strong mental models of the APIs they used.
+I gained first-hand knowledge of the difficulties programmers have when trying to learn new libraries informally for challenging, open-ended programming assignments.
+% I addressed these problems by asking questions, by asking students to share solutions with each other, and directing students to ask more about the problems they encountered.
+And while many of them spent dozens of hours getting to know new tools and debugging the behavior of unfamiliar APIs, proficiency with this set of tools enabled them to combine these components into phenomenal apps.
+My experience instructing for this course affirmed that effectively learning from usage examples can be exceedingly hard, but mastery of this material enables creative feats.
 
-For all the glorious advice I have received from my peers, I foster an environment of research, design, and making at Berkeley.
-I regularly volunteer at the CITRIS Invention Lab, a student hackerspace.
-I coordinate the Berkeley Institute of Design weekly seminar, inviting scholars, showing them around and, most importantly, arranging meetings between students and faculty with synergistic interests.
-I organized a reception for the UIST program committee and UC Berkeley students and faculty to mingle while the PC was being held in Berkeley.
-I organized Visit Day.
-All of this aims to enable lively, brilliant academic discourse that I've come to expect from my peers.
+The community I identify with most closely is my research group, within which I take efforts foster an environment of design and research.
+I regularly volunteer at the CITRIS Invention Lab, a student hackerspace, to keep the space open for students developing new interactive devices.
+I coordinate the Berkeley Institute of Design weekly seminar with Cesar Torres.
+We invite scholars to speak about their work, offer them a tour of the HCI facilities, and, most importantly, arrange meetings between them and students and faculty with mutual interests to promote the exchange of academic ideas.
+I organized our discipline's ``Visit Day'' outing, where five prospective PhD students joined our department on a hike with lightning talks interspersed when we took breaks to view the San Francisco Bay.
+I also organized a reception to welcome the UIST program committee last Spring, where visiting experts in HCI mingled with Berkeley students and faculty amidst dozens of posters and a handful of demos.
+Through this active effort within the Berkeley Institute of Design, I aim to enable lively, brilliant academic discourse that I've come to expect from my peers.
 
-\if 0
-As head TA, I developed materials to support active learning for a class that emphasizes learning by doing.
-I and a fellow TA wrote and led new lab-style learning activities and lectures to introduce programming skills such as wireless communication, databases, and location services for smartwatch technology.
-At our sections, we planned activities for practicing presentations through wordplay and skits, and thinking through problems involving models of human performance like Fitts' Law.
-We saw historically quite high attendance rates throughout the semester at the semi-weekly review sessions, with around 50\% attendance throughout the first two-thirds of the summer term.
-
-As a CS160 GSI, I saw several successes in helping students overcome barriers with code.
-After the final poster session, one of my students told me that I was the best TA he has ever had.
-One team that I worked closely with through the ideation and prototyping process won first prize at our poster session.
-After a whimsical session I led where I instructed students on how to incorporate playfulness into their presentations, I in fact saw skits and wordplay make their way into student presentations.
-I also coordinated students to collaborate to lead each other to solutions to each others' problems during office hours for a challenging programming project.
-It was during this time that I developed much of my motivation to help programmers critically engage with code that they are reusing.
-
-% Outreach: Working
-
-As a worker, I myself have encountered, overcome, and encountered again the problems of working with code.
-Working with a new language or framework can be exceedingly difficult, a lesson I learned at Quettra.
-From working with Linux, it's clear that strong knowledge of theory behind a set of tools and an attentiveness to detail are very important.
-When working on the Astute project, I noticed many of the same problems from my teammates who were working with code.
-
-Anecdotally, I have always been interested in building large systems used by many.
-With a team of friends, I led programming efforts for \emph{King's Ascent}, a Flash game that gained over 70,000 plays on major game portals.
-At past positions at Timesys Corporation and Quettra, Inc., I have both served on customer support, developer on professional services projects, and as an engineer deploying to dozens of machines collecting gigabytes of data.
-
-% Outreach: Community Involvement
-
-% I will be frank and up-front in specifying that in no typical way do I represent an underrepresented group.
-As a Caucasian mid-20s male programmer in Silicon Valley, I in no typical way can claim to represent an underrepresented group in my local region or academic field.
-What I lack in my personal background, I have taken efforts to make up through commitment to foster a supportive, productive culture of design, craft, and building at my institutions.
-
-Since January of this year, I have worked with Cesar Torres to coordinate the Berkeley Institute of Design's weekly seminar, inviting speakers from diverse disciplines, offering them tours and, most importantly, connecting them to the students and faculty that would most benefit from a one-on-one with the speaker during their visit.
-I led the organization of HCI events for last year's Visit Day for incoming students, organizing our outdoor activities and corralling the student and faculty for the group.
-I organized a reception for the UIST PC committee during their visit to Berkeley, involving students from over fifteen student projects at a mixer with some of the top research talent in our field.
-I volunteer at the CITRIS Invention Lab, an on-campus hackerspace, to keep the lab open for students to prototype their designs on the fabrication hardware and by assembling electronic components.
-
-During my time at the University of Pittsburgh, I copy-edited demo video scripts and paper submissions for the peers in my group, the majority of whom were ESL speakers.
-I have also volunteered in the past with the Berkeley High School to mentor on sustainability-centered labs.
-The results of each of these was.
-
-\fi
-
-% Longer-Term Ambitions
-
-My goal is to encourage and enable programmers to concentrate on and engage with code.
-Developing new produces with code is not enough to achieve this goal.
-Only in academic research is learning, cognition, and problem-solving of near unanimous priority that I can gain support for observing practices of non-professional programmers, and study pervasive systems for supporting programming information seeking and code reuse.
+This involvement within my academic family sets the backdrop against which I do my current research.
+% This research similarly focuses on encouraging high-quality making, although in an extreme way.
+Specifically, my work aims to encourage and enable programmers to better learn from, design with and develop quality code using online examples.
+There is no better place than academia to study this question.
+Only within academic research is learning, cognition, and problem-solving sufficiently and unanimously valued that I can gain support to understand non-professional programmers and the interfaces that will support them.
+I see the NSF fellowship as assistive to this work:
+It would ensure that this research would remain supported through my intended graduation in 2019, regardless of my funding source.
+% Moreover, I suspect that the current grant I study under could support additional researchers in programming tools and undergraduate to implement and maintain the work's software if it did not have to support me.
 
 % I already feel closer to that goal, and this remains my core goal for the coming years of graduate school---developing tools and refining theory hand-in-hand to better support end user developer information seeking and programming.
-By the conclusion of my PhD, I hope to have contributed to the study of programmer example use in two ways.
-First, I hope to contribute to theory that explains end user challenges and approaches to problem solving.
-Second, I hope to build concrete end user development tools that enable new research and contribute value to a larger programmer community.
-Currently, I aim to become a professor to enable this research to continue to happen.
+By the conclusion of my PhD, I hope to have contributed to the study of how programmers can better use rotten, marvelous code two ways:
+First, I hope to contribute to theory that explains programmer challenges in learning from, designing with, and writing code using examples.
+Second, I hope to build and open source concrete tools that enable new research and contribute value to a larger programmer community.
+With a professorship or industry research position as the ultimate next step, I hope that this research and its artifacts will inform, enable and inspire the work for both my career and others'.
 
-2--3 undergraduate workers will be helpful in implementing and maintaining the software systems I will develop.
-Research group funds would likely be more avaialbe for such resources were I to receive the NSF fellowship.
-In addition, it would ensure that I would continue to be able to pusue this topic until my graduation in 2019, regardless of any potential fluctuations in funding source.
-
-\if 0
-Better tools for end user developers can lead to better personal software and self-efficacy.
-My research develops tools to help programmers make sense of and benefit from documentation.
-% My past work has demonstrated my commitment to two of the NSF's criteria of Intellectual Merit and Broader Impacts.
-My recent work shows \textbf{intellectual merit}---it has been recognized at a major conference on end-user programming with an Honorable Mention.
-In research and beyond, I have pursued \textbf{broader impacts}---as head TA for a user interface design course and a volunteer in the campus hackerspace, I help others learn to build interactive artifacts with software.
-\fi
-
-% One of the unquestioned motivations of HCI research throughout its history is that people working with the right digital tools can better author creative works for personal use.
-% Digital tools that people have for building things for themselves can be improved, and can help people adapt the right design and implementation practices that will help them productively and effectively do what they need.
-% Spreadsheets can enable accountants to perform complex, aggregate calculations (ref); tools for authoring CAD macros can reduce engineers' time replicating features for new models
-% My research takes this belief as a starting point.
-
-\section{References}
+% \section{References}
 \printbibliography[heading=none]
 
 \end{document}
